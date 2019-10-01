@@ -1,22 +1,46 @@
-.App {
+body {
+  background: linear-gradient(
+    -135deg,
+    red,
+    rgb(9, 214, 26),
+    rgb(11, 111, 114),
+    rgb(122, 5, 87),
+    rgb(7, 7, 0)
+  );
+  background-size: 400% 400%;
+  /* padding: 8%; */
+  position: relative;
+  animation: change 10s ease-in-out infinite;
   text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
+@keyframes change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+div#crypto-container {
+  background: white;
+  width: 70%;
+  margin: 0 auto 4px auto;
+  padding: 1em;
+  box-shadow: 1px 1px 0 lightgrey;
+  text-align: left;
+  font-size: large;
 }
 
-.App-link {
-  color: #09d3ac;
+span.left {
+  font-weight: bold;
+}
+
+span.right {
+  float: right;
 }
